@@ -1,0 +1,16 @@
+[
+{
+  "modid": "cursedlib",
+  "name": "CursedLib",
+  "description": "Generic library mod for CursedFlames's mods",
+  "version": "1.0.0",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["CursedFlames"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
