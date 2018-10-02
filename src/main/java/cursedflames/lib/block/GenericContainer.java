@@ -17,6 +17,10 @@ abstract public class GenericContainer extends Container {
 	protected GenericTileEntity te;
 
 	public GenericContainer(IInventory playerInventory, GenericTileEntity te) {
+		this(playerInventory, te, true);
+	}
+
+	public GenericContainer(IInventory playerInventory, GenericTileEntity te, boolean initSlots) {
 		this.te = te;
 
 		// This container references items out of our own inventory (the 9 slots
@@ -25,8 +29,10 @@ abstract public class GenericContainer extends Container {
 		// transfer items between
 		// both inventories. The two calls below make sure that slots are
 		// defined for both inventories.
-		addOwnSlots();
-		addPlayerSlots(playerInventory);
+		if (initSlots) {
+			addOwnSlots();
+			addPlayerSlots(playerInventory);
+		}
 	}
 
 	protected void addPlayerSlots(IInventory playerInventory) {
