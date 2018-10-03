@@ -64,7 +64,6 @@ public class Config {
 	}
 
 	public Map<String, Property> getSyncedPropMap() {
-		// TODO check this works in both SP and MP - LAN MP too?
 		if (isDedicatedServer) {
 			return localProps;
 		} else {
@@ -87,9 +86,9 @@ public class Config {
 		this.version = version;
 		this.logger = logger;
 		modConfigs.put(modId, this);
-		logger.info(modConfigs.keySet().size());
-		logger.info(modConfigs.get(modId)==null);
-		logger.info(this==null);
+//		logger.info(modConfigs.keySet().size());
+//		logger.info(modConfigs.get(modId)==null);
+//		logger.info(this==null);
 		isDedicatedServer = FMLCommonHandler.instance().getSide()==Side.SERVER;
 	}
 
@@ -234,7 +233,7 @@ public class Config {
 			} else if (type==Type.STRING) {
 				propSynced.setValue(tag.getString(key));
 			}
-			logger.info(key+" "+prop.getString()+" "+propSynced.getString());
+//			logger.info(key+" "+prop.getString()+" "+propSynced.getString());
 		}
 	}
 }
