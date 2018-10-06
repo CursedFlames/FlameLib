@@ -11,8 +11,16 @@ import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.SlotItemHandler;
 
+/**
+ * Container class with transferStackInSlot. If initSlots is true, will register
+ * player slots.
+ * 
+ * @author CursedFlames
+ *
+ */
 // Thanks McJty - something something MIT license something something
 // https://opensource.org/licenses/MIT
+//TODO13 extend GenericContainer with TileContainer instead of this. Add constructor parameters for slot coordinates.
 abstract public class GenericContainer extends Container {
 	protected GenericTileEntity te;
 

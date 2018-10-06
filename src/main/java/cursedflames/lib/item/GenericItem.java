@@ -15,6 +15,13 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+/**
+ * Item class to make creating items easier. Also automatically adds arbitrarily
+ * many tooltip lines based on lang files.
+ * 
+ * @author CursedFlames
+ *
+ */
 @SuppressWarnings("deprecation")
 public class GenericItem extends Item {
 	public GenericItem(String modid, String name) {

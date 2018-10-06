@@ -17,6 +17,13 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.Chunk;
 
+/**
+ * Block class that handles tile entity data storage when broken, and some other
+ * things.
+ * 
+ * @author CursedFlames
+ *
+ */
 abstract public class GenericTileBlock extends GenericBlock implements ITileEntityProvider {
 	public final Class<? extends TileEntity> tileEntity;
 

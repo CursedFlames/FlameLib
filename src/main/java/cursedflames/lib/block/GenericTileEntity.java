@@ -9,13 +9,19 @@ import net.minecraft.network.NetworkManager;
 import net.minecraft.network.play.server.SPacketUpdateTileEntity;
 import net.minecraft.tileentity.TileEntity;
 
+/**
+ * TileEntity class that handles data storage and syncing to client.
+ * 
+ * @author CursedFlames
+ *
+ */
 abstract public class GenericTileEntity extends TileEntity {
 	// private ArrayList<Capability<?>> capabilities;
 	// public GenericTileEntity(ArrayList<Capability<?>> capabilities) {
 	// this.capabilities = capabilities;
 	// }
 	public boolean canInteractWith(EntityPlayer playerIn) {
-		// If we are too far away from this tile entity you cannot use it
+		// If you are too far away from this tile entity you cannot use it
 		return !isInvalid()&&playerIn.getDistanceSq(pos.add(0.5D, 0.5D, 0.5D))<=64D;
 	}
 
@@ -98,6 +104,7 @@ abstract public class GenericTileEntity extends TileEntity {
 	 */
 	abstract public void loadBlockPlaceNBT(@Nonnull NBTTagCompound tag);
 
+	/** currently does nothing */
 	public void notifyUpdate() {
 		// world.notifyBlockUpdate(pos, , newState, flags);
 	}

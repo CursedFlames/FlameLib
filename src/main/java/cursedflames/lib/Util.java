@@ -15,6 +15,12 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.items.IItemHandler;
 
+/**
+ * Some Util class that past me used for something? idk
+ * 
+ * @author CursedFlames
+ *
+ */
 public class Util {
 	public static double getAABBVolume(AxisAlignedBB AABB) {
 		return (AABB.maxX-AABB.minX)*(AABB.maxY-AABB.minY)*(AABB.maxZ-AABB.minZ);

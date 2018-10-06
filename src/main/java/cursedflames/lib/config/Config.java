@@ -22,6 +22,12 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.PlayerEvent;
 import net.minecraftforge.fml.relauncher.Side;
 
+/**
+ * Config class that handles synchronization from server to client.
+ * 
+ * @author CursedFlames
+ *
+ */
 public class Config {
 	public static Map<String, Config> modConfigs = new HashMap<>();
 

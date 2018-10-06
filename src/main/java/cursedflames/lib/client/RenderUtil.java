@@ -5,6 +5,13 @@ import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.util.math.Vec3d;
 import net.minecraftforge.client.model.ModelLoader;
 
+/**
+ * Helper class with FastTESR tri/quad rendering functions, and the five 3d
+ * platonic polyhedra (used for CubeLoader).
+ * 
+ * @author CursedFlames
+ *
+ */
 //TODO consistent polygon winding - figure out how to enable backface culling?
 public class RenderUtil {
 	// @formatter:off

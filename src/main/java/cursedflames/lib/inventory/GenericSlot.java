@@ -6,6 +6,12 @@ import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 
+/**
+ * A {@link Slot} with arbitrary item validation.
+ * 
+ * @author CursedFlames
+ *
+ */
 public class GenericSlot extends Slot {
 
 	Predicate<ItemStack> isValid;

@@ -12,6 +12,13 @@ import net.minecraft.world.storage.WorldSavedData;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.PlayerEvent;
 
+/**
+ * System that caches players' usernames while they're offline. Never actually
+ * used this, not sure if it works.
+ * 
+ * @author CursedFlames
+ *
+ */
 public class UsernameCache extends WorldSavedData {
 	private static final String DATA_NAME = CursedLib.MODID+"_UsernameCache";
 	private static boolean enabled = false;

@@ -8,6 +8,13 @@ import net.minecraft.client.renderer.BufferBuilder;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+/**
+ * A {@link ModelBox} that allows you to have non-1:1 texture coordinates and
+ * position coordinates
+ * 
+ * @author CursedFlames
+ *
+ */
 //TODO more versatile model stuff
 public class ModelCustomUVBox extends ModelBox {
 	/** An array of 6 TexturedQuads, one for each face of a cube */

@@ -19,6 +19,12 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+/**
+ * Helper class to make registering blocks, items, and tile entities easier.
+ * 
+ * @author CursedFlames
+ *
+ */
 //TODO proxy and mod subclasses to make things easier?
 //TODO figure out how to allow conditional registration e.g. based on config options
 //TODO figure out how to do TESRs, since TESR register function has a generic

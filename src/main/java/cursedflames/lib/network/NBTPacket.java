@@ -5,6 +5,12 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraftforge.fml.common.network.ByteBufUtils;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
 
+/**
+ * Simple packet class that sends a single {@link NBTTagCompound}.
+ * 
+ * @author CursedFlames
+ *
+ */
 //TODO some sort of generic message class
 public class NBTPacket implements IMessage {
 	private NBTTagCompound tag;

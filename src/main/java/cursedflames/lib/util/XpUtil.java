@@ -4,7 +4,7 @@ import net.minecraft.entity.player.EntityPlayer;
 
 /**
  * Taken from OpenMods EnchantmentUtils, because they actually know what they're
- * doing. Something something MIT license
+ * doing. Licensed under the MIT license.
  * 
  * @see {@link https://github.com/OpenMods/OpenModsLib/blob/master/src/main/java/openmods/utils/EnchantmentUtils.java}
  *

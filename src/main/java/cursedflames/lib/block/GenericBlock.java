@@ -4,6 +4,12 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 
+/**
+ * Block class to make creating blocks easier.
+ * 
+ * @author CursedFlames
+ *
+ */
 //TODO something to make blockstates easier?
 abstract public class GenericBlock extends Block {
 	public GenericBlock(String modId, String unlocalizedName, CreativeTabs tab, Material mat,

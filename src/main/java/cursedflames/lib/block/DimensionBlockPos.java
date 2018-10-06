@@ -10,14 +10,16 @@ import net.minecraft.world.WorldServer;
 import net.minecraftforge.common.DimensionManager;
 
 /**
- * Class to help with storing {@link BlockPos}es and dimension ids. Pretty self
- * explanitory really.
+ * Class to help with storing {@link BlockPos}es and dimension ids.
+ * 
+ * @author CursedFlames
+ * 
  */
 public class DimensionBlockPos implements INBTSavable {
 	private BlockPos pos;
 	private int dim;
 
-	// should only be used for readFromNBT since it's non-static
+	/** this constructor should only be used for readFromNBT */
 	public DimensionBlockPos() {
 		this.pos = null;
 		this.dim = 0;
@@ -60,7 +62,7 @@ public class DimensionBlockPos implements INBTSavable {
 	 * @param loadDim
 	 *            whether to load the dimension if it isn't already
 	 * @param loadCube
-	 *            whether to load the cube (chunk) if it isn't already
+	 *            whether to load the cube/chunk if it isn't already
 	 * @return the {@link TileEntity} at this pos, or null if there is none or
 	 *         it couldn't be loaded
 	 */

@@ -7,6 +7,12 @@ import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.util.ResourceLocation;
 
+/**
+ * A button that can have a custom height without looking weird.
+ * 
+ * @author CursedFlames
+ *
+ */
 public class GuiBetterButton extends GuiButton {
 //	private boolean isVertical;
 //	private static final ResourceLocation VERTICAL_BUTTON = new ResourceLocation("cursedlib",

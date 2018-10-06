@@ -8,7 +8,13 @@ import net.minecraft.client.gui.GuiPageButtonList;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.resources.I18n;
 
-//just a copy-pasted modified minecraft slider with some feature stolen from the forge slider, because java doesn't have multiple inheritance
+/**
+ * A slider. Not sure how it's different to other sliders, I made this ages ago.
+ * 
+ * @author CursedFlames
+ *
+ */
+//just a copy-pasted modified minecraft slider with some features stolen from the forge slider, because java doesn't have multiple inheritance
 public class GuiSlider extends GuiBetterButton {
 	private List<IGuiSliderListener> listeners = new ArrayList<IGuiSliderListener>();
 

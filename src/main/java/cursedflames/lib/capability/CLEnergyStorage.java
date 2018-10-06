@@ -2,6 +2,12 @@ package cursedflames.lib.capability;
 
 import net.minecraftforge.energy.EnergyStorage;
 
+/**
+ * {@link EnergyStorage} subclass that adds setters.
+ * 
+ * @author CursedFlames
+ *
+ */
 public class CLEnergyStorage extends EnergyStorage {
 	public CLEnergyStorage(int capacity) {
 		super(capacity);
