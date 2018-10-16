@@ -1,10 +1,10 @@
 package cursedflames.lib;
 
+import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.Set;
 
 import cursedflames.lib.block.GenericBlock;
 import cursedflames.lib.block.GenericTileEntity;
@@ -30,11 +30,12 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 //TODO figure out how to do TESRs, since TESR register function has a generic
 public class RegistryHelper {
 	final String modID;
-	Set<GenericBlock> blocks = new HashSet<>();
-	Set<ItemBlock> itemBlocks = new HashSet<>();
-	Set<Item> items = new HashSet<>();
-	Set<Item> defaultItemModels = new HashSet<>();
-	Set<GenericBlock> defaultItemBlockModels = new HashSet<>();
+	// TODO is there a reason I used Set for these originally?
+	List<GenericBlock> blocks = new ArrayList<>();
+	List<ItemBlock> itemBlocks = new ArrayList<>();
+	List<Item> items = new ArrayList<>();
+	List<Item> defaultItemModels = new ArrayList<>();
+	List<GenericBlock> defaultItemBlockModels = new ArrayList<>();
 	Map<String, Class<? extends TileEntity>> tileEntities = new HashMap<>();
 	GenericBlock recentBlock = null;
 	Item recentItem = null;
