@@ -15,11 +15,18 @@ import net.minecraft.item.ItemStack;
 public class GenericSlot extends Slot {
 
 	Predicate<ItemStack> isValid;
+	private int maxSize;
+
+	public GenericSlot(IInventory inventoryIn, int index, int xPosition, int yPosition,
+			Predicate<ItemStack> isValid, int maxSize) {
+		super(inventoryIn, index, xPosition, yPosition);
+		this.isValid = isValid;
+		this.maxSize = maxSize;
+	}
 
 	public GenericSlot(IInventory inventoryIn, int index, int xPosition, int yPosition,
 			Predicate<ItemStack> isValid) {
-		super(inventoryIn, index, xPosition, yPosition);
-		this.isValid = isValid;
+		this(inventoryIn, index, xPosition, yPosition, isValid, 64);
 	}
 
 	public GenericSlot(IInventory inventoryIn, int index, int xPosition, int yPosition) {
@@ -29,5 +36,10 @@ public class GenericSlot extends Slot {
 	@Override
 	public boolean isItemValid(ItemStack stack) {
 		return isValid.test(stack);
+	}
+
+	@Override
+	public int getSlotStackLimit() {
+		return this.maxSize;
 	}
 }
