@@ -1,7 +1,7 @@
 [
 {
   "modid": "cursedlib",
-  "name": "CursedLib",
+  "name": "FlameLib",
   "description": "Generic library mod for CursedFlames's mods",
   "version": "1.0.0",
   "mcversion": "${mcversion}",
